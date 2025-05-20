@@ -2,7 +2,11 @@ import { Layout } from "../Layout/Layout"
 export const Contact = () => {
     return (
         <Layout>
-            This is from COBTACT.
+           <div className="">
+                <div className="mx-2 sm:mx-15">
+                    <h1 className="h-[500px]">This is Contact Us</h1>
+                </div>
+            </div>
         </Layout>
     )
 }

@@ -1,11 +1,11 @@
-import { Layout } from "../Layout/Layout"
+import { Layout } from "../../Layout/Layout"
 
-export const News = () => {
+export const Enroll_Guide = () => {
     return (
         <Layout>
             <div className="">
                 <div className="mx-2 sm:mx-15">
-                    <h1 className="h-[500px]">This is News</h1>
+                    <h1 className="h-[500px]">This is Enroll Guide</h1>
                 </div>
             </div>
         </Layout>
