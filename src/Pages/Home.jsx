@@ -44,7 +44,7 @@ export const Home = () => {
                     <div 
                     className="md:w-[32%] w-[100%] mb-4 rounded-2xl overflow-hidden shadow-lg bg-white p-6">
                         <img className="w-full h-48 object-cover rounded-xl mb-4" src={AI_COURSE} alt="AI COURSE" />
-                        <div className="font-bold text-xl mb-2">Card Title</div>
+                        <div className="font-bold text-xl mb-2">AI Course</div>
                         <p className="text-gray-700 text-base">
                             This is a simple card description. You can put any content here.
                         </p>
@@ -53,7 +53,7 @@ export const Home = () => {
                     <div 
                     className="md:w-[32%] w-[100%] mb-4 rounded-2xl overflow-hidden shadow-lg bg-white p-6">
                         <img className="w-full h-48 object-cover rounded-xl mb-4" src={WEB_COURSE} alt="Web Course" />
-                        <div className="font-bold text-xl mb-2">Card Title</div>
+                        <div className="font-bold text-xl mb-2">Web Course</div>
                         <p className="text-gray-700 text-base">
                             This is a simple card description. You can put any content here.
                         </p>
@@ -62,7 +62,7 @@ export const Home = () => {
                     <div 
                     className="md:w-[32%] w-[100%] mb-4 rounded-2xl overflow-hidden shadow-lg bg-white p-6">
                         <img className="w-full h-48 object-cover rounded-xl mb-4" src={CYBER_COURSE} alt="Card image" />
-                        <div className="font-bold text-xl mb-2">Card Title</div>
+                        <div className="font-bold text-xl mb-2">Cyber Course</div>
                         <p className="text-gray-700 text-base">
                             This is a simple card description. You can put any content here.
                         </p>
