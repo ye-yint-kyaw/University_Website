@@ -2,8 +2,14 @@ import { Link } from "react-router-dom"
 import { Search } from "lucide-react"
 import { ChevronDown } from "lucide-react"
 import {AlignJustify} from "lucide-react"
+import { Facebook } from "lucide-react"
+import { Send } from "lucide-react"
+import { Mail } from "lucide-react"
 import IMG_LINK from "../assets/NUCS_Logo_White.png"
 export const Layout = ({children}) => {
+    const FACEBOOK_LINK = 'https://www.facebook.com/share/19B6ELL3b1/?mibextid=wwXIfr';
+    const TELEGRAM_LINK = 'https://t.me/ucs_iboe_qa';
+    const MAIL = 'ucs.iboe@he.moeedu.org';
     return (
         <>
             <nav className=" bg-[#008282] shadow-md">
@@ -59,6 +65,62 @@ export const Layout = ({children}) => {
             </nav>
 
             {children}
+            <footer className="bg-[#008282] text-white">
+                <div className="mx-2 sm:mx-15 flex justify-between py-10">
+                    <div className="md:flex-1">
+                            <img className="w-[150px]" src={IMG_LINK} alt="" />
+                            <h3 className="text-white my-8 font-bold"> မြန်မှန် တွက်ချက် တိုင်းပြည်အတွက်</h3>
+                            <h3 className="text-3xl pb-6">Connect With Us</h3>
+                            <div className="pb-6 w-[58%]">
+                                <ul className="flex justify-between items-center">
+                                    <li>
+                                        <a className="inline-block p-2 rounded-full  bg-white text-[#008282] hover:bg-[#005252] hover:text-white duration-500" target="_blank" href={FACEBOOK_LINK}><Facebook /></a>
+                                    </li>
+                                    <li>
+                                        <a className="inline-block p-2 rounded-full  bg-white text-[#008282] hover:bg-[#005252] hover:text-white duration-500" target="_blank" href={TELEGRAM_LINK}><Send /></a>
+                                    </li>
+                                    <li>
+                                        <a className="inline-block p-2 rounded-full  bg-white text-[#008282] hover:bg-[#005252] hover:text-white duration-500" target="_blank" href={`mailto:${Mail}`}><Mail /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div className="md:flex-1">
+                        <h3 className="text-3xl pb-6">Academic</h3>
+                        <ul>
+                            <li>
+                                <Link className="inline-block py-2 hover:text-gray-300 duration-500">Degree Program</Link>
+                            </li>
+                            <li>
+                                <Link className="inline-block py-2 hover:text-gray-300 duration-500">Short Courses</Link>
+                            </li>
+                            <li>
+                                <Link className="inline-block py-2 hover:text-gray-300 duration-500">Enrollment</Link>
+                            </li>
+                            <li>
+                                <Link className="inline-block py-2 hover:text-gray-300 duration-500">LMS</Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="md:flex-1">
+                        <h3 className="text-3xl pb-6">News And Events</h3>
+                        <ul>
+                            <li>
+                                <Link className="inline-block py-2 hover:text-gray-300 duration-500">Announcements</Link>
+                            </li>
+                            <li>
+                                <Link className="inline-block py-2 hover:text-gray-300 duration-500">Events</Link>
+                            </li>
+                            <li>
+                                <Link className="inline-block py-2 hover:text-gray-300 duration-500">Belone-Journals</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="bg-[#005252] text-white text-center py-2">
+                    <p> &copy; 2025 National University of Computer Studies</p>
+                </div>
+            </footer>
         </>
     )
 }

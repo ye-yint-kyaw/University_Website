@@ -42,33 +42,53 @@ export const Home = () => {
                 <h2 className="py-10 font-bold text-center text-4xl text-[#008282]">Short Courses</h2>
                 <div className="sm:flex justify-evenly pb-4 px-4">
                     <div 
-                    className="md:w-[32%] w-[100%] mb-4 rounded-2xl overflow-hidden shadow-lg bg-white p-6">
-                        <img className="w-full h-48 object-cover rounded-xl mb-4" src={AI_COURSE} alt="AI COURSE" />
-                        <div className="font-bold text-xl mb-2">AI Course</div>
+                    className="md:w-[32%] w-[100%] rounded-2xl mb-4 overflow-hidden shadow-lg bg-white p-6">
+                        <div className="rounded-2xl overflow-hidden">
+                          <img className="w-full h-48 object-cover rounded-xl mb-4 transition-transform duration-800 hover:scale-[1.05]" src={AI_COURSE} alt="AI COURSE" />
+                        </div>
+                        <div className="font-bold text-xl mb-2 ">AI Course</div>
                         <p className="text-gray-700 text-base">
                             This is a simple card description. You can put any content here.
-                        </p>
-                        
+                        </p> 
+                        <button
+                        className="bg-[#008282] hover:bg-[#005252] cursor-pointer mt-4 text-white font-medium px-6 py-2 rounded-2xl transition-colors duration-300"
+                        >
+                        See More
+                        </button>
                     </div>
                     <div 
                     className="md:w-[32%] w-[100%] mb-4 rounded-2xl overflow-hidden shadow-lg bg-white p-6">
-                        <img className="w-full h-48 object-cover rounded-xl mb-4" src={WEB_COURSE} alt="Web Course" />
+                        <div className="rounded-2xl overflow-hidden">
+                          <img className="w-full h-48 object-cover rounded-xl mb-4 transition-transform duration-800 hover:scale-[1.05]" src={WEB_COURSE} alt="Web Course" />
+                        </div>
                         <div className="font-bold text-xl mb-2">Web Course</div>
                         <p className="text-gray-700 text-base">
                             This is a simple card description. You can put any content here.
                         </p>
+                        <button
+                        className="bg-[#008282] hover:bg-[#005252] cursor-pointer mt-4 text-white font-medium px-6 py-2 rounded-2xl transition-colors duration-300"
+                        >
+                        See More
+                        </button>
                         
                     </div>
                     <div 
                     className="md:w-[32%] w-[100%] mb-4 rounded-2xl overflow-hidden shadow-lg bg-white p-6">
-                        <img className="w-full h-48 object-cover rounded-xl mb-4" src={CYBER_COURSE} alt="Card image" />
+                        <div className="rounded-2xl overflow-hidden">
+                          <img className="w-full h-48 object-cover rounded-xl mb-4 transition-transform duration-800 hover:scale-[1.05]" src={CYBER_COURSE} alt="Cyber COURSE" />
+                        </div>
                         <div className="font-bold text-xl mb-2">Cyber Course</div>
                         <p className="text-gray-700 text-base">
                             This is a simple card description. You can put any content here.
                         </p>
-                        
+                        <button
+                        className="bg-[#008282] hover:bg-[#005252] cursor-pointer mt-4 text-white font-medium px-6 py-2 rounded-2xl transition-colors duration-300"
+                        >
+                        See More
+                        </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </Layout>
