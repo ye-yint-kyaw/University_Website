@@ -66,7 +66,7 @@ export const Layout = ({children}) => {
 
             {children}
             <footer className="bg-[#008282] text-white">
-                <div className="mx-2 sm:mx-15 flex justify-between py-10">
+                <div className="mx-2 sm:mx-15 md:flex justify-between py-10">
                     <div className="md:flex-1">
                             <img className="w-[150px]" src={IMG_LINK} alt="" />
                             <h3 className="text-white my-8 font-bold"> မြန်မှန် တွက်ချက် တိုင်းပြည်အတွက်</h3>
